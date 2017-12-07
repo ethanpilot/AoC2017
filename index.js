@@ -41,7 +41,7 @@ console.log(uniqCount);
 console.log('Part Two - has anagram');
 console.log(nonAnaCount);*/
 
-var day5 = require('./5');
+/*var day5 = require('./5');
 var day5Input = require('./5.input1');
 console.log('Day 5');
 console.log('Part One - step count');
@@ -56,4 +56,13 @@ console.log('Part 1');
 console.log(day6.redistCycleCount(day6Input));
 day6Input = [14,0,15,12,11,11,3,5,1,6,8,4,9,1,8,4];
 console.log('Part 2');
-console.log(day6.redistCycleCount(day6Input, true));
+console.log(day6.redistCycleCount(day6Input, true));*/
+
+var day7 = require('./7');
+var day7Input = require('./7.input1');
+console.log('Day 7 Result');
+console.log('Part 1');
+console.log(day7.findBottomFromTextList(day7Input));
+console.log('Part 2');
+let builtTree = day7.buildTree(day7Input.map(day7.buildNode, day7));
+console.log(day7.getCorrectWeightForUnbalanced(builtTree));

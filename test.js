@@ -3,4 +3,5 @@
 //var test3 = require('./3.spec.js');
 //require('./4.spec.js')
 //require('./5.spec')
-require('./6.spec')
+//require('./6.spec')
+require('./7.spec')
