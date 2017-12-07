@@ -25,6 +25,30 @@ console.log(day3.getDistance(day3Input));
 console.log('Part 2');
 console.log(day3.seekGreaterNumber(265149));*/
 
+/*var day4 = require('./4.js');
+
+var day4Input = require('./4.input1');
+
+console.log('Day 4');
+console.log('Part One - has duplicates');
+let uniqCount = 0;
+let nonAnaCount = 0;
+day4Input.forEach(function(x){
+  if (!day4.hasDupes(x)) uniqCount++;
+  if (!day4.hasAnagram(x)) nonAnaCount++;
+})
+console.log(uniqCount);
+console.log('Part Two - has anagram');
+console.log(nonAnaCount);*/
+
+var day5 = require('./5');
+var day5Input = require('./5.input1');
+console.log('Day 5');
+console.log('Part One - step count');
+console.log(day5.traverse(day5Input));
+console.log('Part Two - step count v2');
+console.log(day5.traverse(day5Input, true));
+
 var day6 = require('./6')
 var day6Input = [14,0,15,12,11,11,3,5,1,6,8,4,9,1,8,4];
 console.log('Day 6 Result');
