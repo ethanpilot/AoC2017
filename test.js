@@ -4,4 +4,5 @@
 //require('./4.spec.js')
 //require('./5.spec')
 //require('./6.spec')
-require('./7.spec')
+//require('./7.spec')
+require('./8.spec')

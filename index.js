@@ -58,11 +58,30 @@ day6Input = [14,0,15,12,11,11,3,5,1,6,8,4,9,1,8,4];
 console.log('Part 2');
 console.log(day6.redistCycleCount(day6Input, true));*/
 
-var day7 = require('./7');
+/*var day7 = require('./7');
 var day7Input = require('./7.input1');
 console.log('Day 7 Result');
 console.log('Part 1');
 console.log(day7.findBottomFromTextList(day7Input));
 console.log('Part 2');
 let builtTree = day7.buildTree(day7Input.map(day7.buildNode, day7));
-console.log(day7.getCorrectWeightForUnbalanced(builtTree));
+console.log(day7.getCorrectWeightForUnbalanced(builtTree));*/
+
+var day8 = require('./8');
+var day8Input = require('./8.input1');
+console.log('Day 8 Result');
+console.log('Part 1');
+let register = {};
+day8Input.forEach((line)=>{
+  register = day8.parseLine(line, register);
+})
+console.log(day8.getMaxReg(register));
+console.log('Part 2');
+register = {};
+let max = -Infinity;
+day8Input.forEach((line)=>{
+  register = day8.parseLine(line, register);
+  let localMax = day8.getMaxReg(register);
+  if (localMax > max) max = localMax;
+})
+console.log(max);
