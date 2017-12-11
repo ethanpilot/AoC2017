@@ -86,13 +86,21 @@ day8Input.forEach((line)=>{
 })
 console.log(max);*/
 
-var day9 = require('./9');
+/*var day9 = require('./9');
 var day9Input = require('./9.input1');
 console.log('Day 9 Result');
 console.log('Part 1');
 console.log(day9.scoreFromString(day9Input));
 console.log('Part 2');
-console.log(day9.buildStreamArr(day9.splitStreamString(day9Input)).uncanceledCount)
+console.log(day9.buildStreamArr(day9.splitStreamString(day9Input)).uncanceledCount)*/
+
+var day10 = require('./10');
+var day1Input = [106,118,236,1,130,0,235,254,59,205,2,87,129,25,255,118];
+console.log('Day 10 Result');
+console.log('Part 1');
+console.log(day10.hashSequentiallyAndCheck(day10.buildSeqArr(256), day1Input));
+console.log('Part 2');
+console.log(day10.fullHash(day1Input.join(',')));
 
 /*var day11 = require('./11');
 var day11Input = require('./11.input1');

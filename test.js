@@ -1,10 +1,11 @@
-//var test1 = require('./1.spec.js');
-//var test2 = require('./2.spec.js');
-//var test3 = require('./3.spec.js');
-//require('./4.spec.js')
+//require('./1.spec');
+//require('./2.spec');
+//require('./3.spec');
+//require('./4.spec')
 //require('./5.spec')
 //require('./6.spec')
 //require('./7.spec')
 //require('./8.spec')
-require('./9.spec')
+//require('./9.spec')
+require('./10.spec')
 //require('./11.spec')
