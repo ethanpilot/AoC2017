@@ -86,10 +86,18 @@ day8Input.forEach((line)=>{
 })
 console.log(max);*/
 
-var day11 = require('./11');
+var day9 = require('./9');
+var day9Input = require('./9.input1');
+console.log('Day 9 Result');
+console.log('Part 1');
+console.log(day9.scoreFromString(day9Input));
+console.log('Part 2');
+console.log(day9.buildStreamArr(day9.splitStreamString(day9Input)).uncanceledCount)
+
+/*var day11 = require('./11');
 var day11Input = require('./11.input1');
 console.log('Day 11 Result');
 console.log('Part 1');
 console.log(day11.getStepsFromDirObj(day11.simplifyDirectionObj(day11.buildDirectionObj(day11Input))));
 console.log('Part 2')
-console.log(day11.getMaxDistanceFromList(day11Input));
+console.log(day11.getMaxDistanceFromList(day11Input));*/
