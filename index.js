@@ -67,7 +67,7 @@ console.log('Part 2');
 let builtTree = day7.buildTree(day7Input.map(day7.buildNode, day7));
 console.log(day7.getCorrectWeightForUnbalanced(builtTree));*/
 
-var day8 = require('./8');
+/*var day8 = require('./8');
 var day8Input = require('./8.input1');
 console.log('Day 8 Result');
 console.log('Part 1');
@@ -84,4 +84,12 @@ day8Input.forEach((line)=>{
   let localMax = day8.getMaxReg(register);
   if (localMax > max) max = localMax;
 })
-console.log(max);
+console.log(max);*/
+
+var day11 = require('./11');
+var day11Input = require('./11.input1');
+console.log('Day 11 Result');
+console.log('Part 1');
+console.log(day11.getStepsFromDirObj(day11.simplifyDirectionObj(day11.buildDirectionObj(day11Input))));
+console.log('Part 2')
+console.log(day11.getMaxDistanceFromList(day11Input));
