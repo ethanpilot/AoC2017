@@ -7,5 +7,6 @@
 //require('./7.spec')
 //require('./8.spec')
 //require('./9.spec')
-require('./10.spec')
+//require('./10.spec')
 //require('./11.spec')
+require('./12.spec')

@@ -94,13 +94,13 @@ console.log(day9.scoreFromString(day9Input));
 console.log('Part 2');
 console.log(day9.buildStreamArr(day9.splitStreamString(day9Input)).uncanceledCount)*/
 
-var day10 = require('./10');
+/*var day10 = require('./10');
 var day1Input = [106,118,236,1,130,0,235,254,59,205,2,87,129,25,255,118];
 console.log('Day 10 Result');
 console.log('Part 1');
 console.log(day10.hashSequentiallyAndCheck(day10.buildSeqArr(256), day1Input));
 console.log('Part 2');
-console.log(day10.fullHash(day1Input.join(',')));
+console.log(day10.fullHash(day1Input.join(',')));*/
 
 /*var day11 = require('./11');
 var day11Input = require('./11.input1');
@@ -109,3 +109,11 @@ console.log('Part 1');
 console.log(day11.getStepsFromDirObj(day11.simplifyDirectionObj(day11.buildDirectionObj(day11Input))));
 console.log('Part 2')
 console.log(day11.getMaxDistanceFromList(day11Input));*/
+
+var day12 = require('./12')
+var day12Input = require('./12.input1')
+console.log('Day 12 Result')
+console.log('Part 1')
+console.log(day12.exploreTree(day12.initializeTree(day12Input), '0').length)
+console.log('Part 2')
+console.log(day12.getUniqueHashes(day12.exploreFullTree(day12.initializeTree(day12Input)).hash).length)
