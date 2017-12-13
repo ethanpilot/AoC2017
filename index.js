@@ -110,10 +110,18 @@ console.log(day11.getStepsFromDirObj(day11.simplifyDirectionObj(day11.buildDirec
 console.log('Part 2')
 console.log(day11.getMaxDistanceFromList(day11Input));*/
 
-var day12 = require('./12')
+/*var day12 = require('./12')
 var day12Input = require('./12.input1')
 console.log('Day 12 Result')
 console.log('Part 1')
 console.log(day12.exploreTree(day12.initializeTree(day12Input), '0').length)
 console.log('Part 2')
-console.log(day12.getUniqueHashes(day12.exploreFullTree(day12.initializeTree(day12Input)).hash).length)
+console.log(day12.getUniqueHashes(day12.exploreFullTree(day12.initializeTree(day12Input)).hash).length)*/
+
+var day13 = require('./13')
+var day13Input = require('./13.input1')
+console.log('Day 13 Result')
+console.log('Part 1')
+console.log(day13.traverseFirewall(day13.buildFirewall(day13Input)))
+console.log('Part 2')
+console.log(day13.findSafeDelay(day13.buildFirewall(day13Input)))
