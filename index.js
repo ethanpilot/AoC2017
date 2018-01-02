@@ -118,10 +118,18 @@ console.log(day12.exploreTree(day12.initializeTree(day12Input), '0').length)
 console.log('Part 2')
 console.log(day12.getUniqueHashes(day12.exploreFullTree(day12.initializeTree(day12Input)).hash).length)*/
 
-var day13 = require('./13')
+/*var day13 = require('./13')
 var day13Input = require('./13.input1')
 console.log('Day 13 Result')
 console.log('Part 1')
 console.log(day13.traverseFirewall(day13.buildFirewall(day13Input)))
 console.log('Part 2')
-console.log(day13.findSafeDelay(day13.buildFirewall(day13Input)))
+console.log(day13.findSafeDelay(day13.buildFirewall(day13Input)))*/
+
+var day14 = require('./14')
+var day14Input = day14.buildHashGrid('jxqlasbh');
+console.log('Day 14 Result')
+console.log('Part 1')
+console.log(day14.countHashGrid(day14Input))
+console.log('Part 2')
+console.log(day14.getRegions(day14Input))
